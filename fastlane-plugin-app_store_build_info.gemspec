@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'rtayal11@gmail.com'
 
   spec.summary       = 'Get build info from App Store Connect'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-app_store_build_info"
+  spec.homepage      = "https://github.com/RishabhTayal/fastlane-plugin-app_store_build_info"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

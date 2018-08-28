@@ -1,4 +1,4 @@
-describe Fastlane::Actions::AppstoreBuildInfoAction do
+describe Fastlane::Actions::AppStoreBuildInfoAction do
   describe "app_store_build_info" do
 	  it "orders versions array of integers" do
 	    versions = [3, 5, 1, 0, 4]

@@ -1,5 +1,5 @@
 require 'fastlane/action'
-require_relative '../helper/appstore_build_info_helper'
+require_relative '../helper/app_store_build_info_helper'
 
 module Fastlane
   module Actions
@@ -9,7 +9,7 @@ module Fastlane
       LATEST_VERSION_NUMBER = :LATEST_VERSION_NUMBER
     end
 
-    class AppstoreBuildInfoAction < Action
+    class AppStoreBuildInfoAction < Action
       def self.run(params)
         require 'spaceship'
 

@@ -2,16 +2,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/appstore_build_info/version'
+require 'fastlane/plugin/app_store_build_info/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-appstore_build_info'
-  spec.version       = Fastlane::AppstoreBuildInfo::VERSION
+  spec.name          = 'fastlane-plugin-app_store_build_info'
+  spec.version       = Fastlane::AppStoreBuildInfo::VERSION
   spec.author        = 'Rishabh Tayal'
   spec.email         = 'rtayal11@gmail.com'
 
   spec.summary       = 'Get build info from App Store Connect'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-appstore_build_info"
+  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-app_store_build_info"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

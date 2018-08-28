@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?("UI")
 
   module Helper
-    class AppstoreBuildInfoHelper
+    class AppStoreBuildInfoHelper
       # class methods that you define here become available in your action
-      # as `Helper::AppstoreBuildInfoHelper.your_method`
+      # as `Helper::AppStoreBuildInfoHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the appstore_build_info plugin helper!")
+        UI.message("Hello from the app_store_build_info plugin helper!")
       end
     end
   end

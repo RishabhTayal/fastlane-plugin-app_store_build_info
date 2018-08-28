@@ -1,16 +1,16 @@
-# appstore_build_info plugin
+# app_store_build_info plugin
 
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-appstore_build_info)
+[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-app_store_build_info)
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-appstore_build_info`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-app_store_build_info`, add it to your project by running:
 
 ```bash
-fastlane add_plugin appstore_build_info
+fastlane add_plugin app_store_build_info
 ```
 
-## About appstore_build_info
+## About app_store_build_info
 
 Get build info from App Store Connect
 

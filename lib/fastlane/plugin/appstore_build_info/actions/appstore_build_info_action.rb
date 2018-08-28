@@ -35,9 +35,6 @@ module Fastlane
         Spaceship::Tunes.login(params[:username])
         Spaceship::Tunes.select_team(team_id: params[:team_id], team_name: params[:team_name])
         UI.message("Login successful")
-
-        require 'pry'
-        binding.pry
         
         platform = params[:platform]
 

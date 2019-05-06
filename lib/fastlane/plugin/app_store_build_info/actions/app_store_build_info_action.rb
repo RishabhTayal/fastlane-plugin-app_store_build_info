@@ -71,7 +71,7 @@ module Fastlane
           UI.message("Fetching the latest build number for version #{version_number}")
 
           begin
-            build_numbers = app.all_builds_for_train(train: version_number, platform: platform).map(&:build_version)
+            build_numbers = app.tunes_all_builds_for_train(train: version_number, platform: platform).map(&:build_version)
             build_nr = self.order_versions(build_numbers).last
             if build_nr.nil? && params[:initial_build_number]
               UI.message("Could not find a build on iTC. Using supplied 'initial_build_number' option")
@@ -125,7 +125,8 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :initial_build_number,
                                        env_name: "INITIAL_BUILD_NUMBER",
                                        description: "sets the build number to given value if no build is in current train",
-                                       is_string: false),
+                                       is_string: false,
+                                       optional: true),
           FastlaneCore::ConfigItem.new(key: :app_identifier,
                                        short_option: "-a",
                                        env_name: "FASTLANE_APP_IDENTIFIER",
